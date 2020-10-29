@@ -21,14 +21,14 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-      this.reloadCourses();
+    this.reloadCourses();
   }
 
   reloadCourses() {
 
-      this.beginnerCourses$ = this.coursesStore.filterByCategory("BEGINNER");
+    this.beginnerCourses$ = this.coursesStore.filterByCategory('BEGINNER');
 
-      this.advancedCourses$ = this.coursesStore.filterByCategory("ADVANCED");
+    this.advancedCourses$ = this.coursesStore.filterByCategory('ADVANCED');
   }
 
 }
